@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="774.0" prefWidth="1264.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentprogressmonitor.MainController">
+   <children>
+      <AnchorPane prefHeight="365.0" prefWidth="1315.0">
+         <children>
+            <Label layoutX="147.0" layoutY="21.0" prefHeight="43.0" prefWidth="716.0" text="Welcome to  Student Progress Monitor DashBoard" textFill="#902121">
+               <font>
+                  <Font name="Jokerman" size="26.0" />
+               </font>
+            </Label>
+            <Accordion layoutX="34.0" layoutY="65.0" prefHeight="631.0" prefWidth="1032.0">
+              <panes>
+                  <TitledPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="109.0" prefWidth="340.0" text="Enroll New Student Details">
+                    <content>
+                      <AnchorPane prefHeight="424.0" prefWidth="748.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="124.0" text="Registration Number:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Regnoarea" layoutX="150.0" layoutY="10.0" />
+                              <Label layoutX="16.0" layoutY="51.0" prefHeight="17.0" prefWidth="124.0" text="First Name:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="StudentFirstNamearea" layoutX="151.0" layoutY="47.0" />
+                              <Label layoutX="15.0" layoutY="87.0" prefHeight="17.0" prefWidth="124.0" text="Surname:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="Surnamearea" layoutX="151.0" layoutY="83.0" />
+                              <Label layoutX="16.0" layoutY="164.0" prefHeight="17.0" prefWidth="124.0" text="Date of Birth:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="EnrollNewStudentButton" layoutX="515.0" layoutY="260.0" mnemonicParsing="false" onAction="#enrollStudent" prefHeight="25.0" prefWidth="62.0" text="Submit" />
+                              <Label layoutX="16.0" layoutY="128.0" prefHeight="17.0" prefWidth="80.0" text="LastName:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="LastNamearea" layoutX="152.0" layoutY="124.0" />
+                              <DatePicker fx:id="DOBarea" layoutX="151.0" layoutY="159.0" prefHeight="27.0" prefWidth="158.0" />
+                              <Label layoutX="17.0" layoutY="205.0" prefHeight="17.0" prefWidth="124.0" text="Date of Enrollment:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="Enrolldate" layoutX="152.0" layoutY="200.0" prefHeight="27.0" prefWidth="158.0" />
+                              <Label layoutX="360.0" layoutY="15.0" prefHeight="17.0" prefWidth="118.0" text="Father's FirstName:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="FatherFirstName" layoutX="483.0" layoutY="10.0" promptText="Father's FirstName:" />
+                              <Label layoutX="361.0" layoutY="47.0" prefHeight="17.0" prefWidth="116.0" text="Father's LastName:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="FatherLastName" layoutX="484.0" layoutY="42.0" promptText="Father's LastName:" />
+                              <Label layoutX="363.0" layoutY="82.0" prefHeight="17.0" prefWidth="122.0" text="Mother's FirstName:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="MotherFirstName" layoutX="485.0" layoutY="77.0" promptText="Mother's FirstName:" />
+                              <Label layoutX="360.0" layoutY="114.0" prefHeight="17.0" prefWidth="123.0" text="Mother'sLastName:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="MotherLastName" layoutX="486.0" layoutY="109.0" promptText="Mother'sLastName:" />
+                              <Label layoutX="357.0" layoutY="147.0" prefHeight="17.0" prefWidth="134.0" text="Guardian's FirstName:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="GuardianFirstName" layoutX="487.0" layoutY="142.0" promptText="Guardian's FirstName:" />
+                              <Label layoutX="359.0" layoutY="180.0" prefHeight="17.0" prefWidth="130.0" text="Guardian's LastName:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="GuardianLastName" layoutX="487.0" layoutY="175.0" promptText="Guardian's LastName:" />
+                              <Label layoutX="715.0" layoutY="14.0" prefHeight="17.0" prefWidth="99.0" text="FatherContact:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="FatherContact" layoutX="842.0" layoutY="9.0" promptText="Father's Contact:" />
+                              <Label layoutX="718.0" layoutY="50.0" prefHeight="17.0" prefWidth="99.0" text="MotherContact:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="MotherContact" layoutX="845.0" layoutY="45.0" promptText="Mother's Contact:" />
+                              <Label layoutX="713.0" layoutY="82.0" prefHeight="17.0" prefWidth="119.0" text="Guardian's Contact:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="GuardianContact" layoutX="846.0" layoutY="77.0" promptText="Guardian's Contact:" />
+                              <Label layoutX="713.0" layoutY="115.0" prefHeight="17.0" prefWidth="119.0" text="Father's Occupation:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="FatherOccupation" layoutX="848.0" layoutY="110.0" promptText="Father's Occupation:" />
+                              <Label layoutX="705.0" layoutY="147.0" prefHeight="17.0" prefWidth="128.0" text="Mother's Occupation:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="MotherOccupation" layoutX="849.0" layoutY="142.0" promptText="Mother's Occupation:" />
+                              <Label layoutX="705.0" layoutY="180.0" prefHeight="17.0" prefWidth="133.0" text="Guardian's Occupation:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="GuardianOccupation" layoutX="849.0" layoutY="175.0" promptText="Guardian's Occupation:" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="340.0" text="Register New Subject">
+                     <content>
+                        <AnchorPane prefHeight="424.0" prefWidth="748.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="124.0" text="Subject Code:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="SubjectCodearea" layoutX="150.0" layoutY="10.0" prefHeight="43.0" prefWidth="249.0" />
+                              <Label layoutX="16.0" layoutY="66.0" prefHeight="43.0" prefWidth="124.0" text="Subject Name:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="SubjectNamearea" layoutX="151.0" layoutY="62.0" prefHeight="43.0" prefWidth="248.0" />
+                              <Button fx:id="RegisterNewSubjectButton" layoutX="217.0" layoutY="134.0" mnemonicParsing="false" onAction="#registerSubject" prefHeight="43.0" prefWidth="84.0" text="Submit">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane animated="false" prefHeight="134.0" prefWidth="719.0" text="Marks Entry">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="192.0" prefWidth="714.0">
+                           <children>
+                              <TitledPane animated="false" layoutX="25.0" layoutY="62.0" prefHeight="208.0" prefWidth="338.0" text="Form 1" textFill="#5ed90d">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="149.0" prefWidth="466.0">
+                                       <children>
+                                          <Label layoutX="23.0" layoutY="9.0" prefHeight="17.0" prefWidth="139.0" text="MidTerm1AverageMarks:" />
+                                          <Label layoutX="188.0" layoutY="9.0" prefHeight="17.0" prefWidth="133.0" text="EndTerm1AverageMarks" />
+                                          <TextField fx:id="Form1MidTerm1AverageMarks" layoutX="48.0" layoutY="26.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <TextField fx:id="Form1EndTerm1AverageMarks" layoutX="209.0" layoutY="26.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <Label layoutX="22.0" layoutY="66.0" prefHeight="17.0" prefWidth="136.0" text="MidTerm2AverageMarks:" />
+                                          <Label layoutX="187.0" layoutY="66.0" prefHeight="17.0" prefWidth="131.0" text="EndTerm2AverageMarks" />
+                                          <TextField fx:id="Form1MidTerm2AverageMarks" layoutX="47.0" layoutY="83.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <TextField fx:id="Form1EndTerm2AverageMarks" layoutX="208.0" layoutY="83.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <Label layoutX="23.0" layoutY="120.0" prefHeight="17.0" prefWidth="136.0" text="MidTerm3AverageMarks:" />
+                                          <Label layoutX="188.0" layoutY="120.0" prefHeight="17.0" prefWidth="131.0" text="EndTerm3AverageMarks" />
+                                          <TextField fx:id="Form1MidTerm3AverageMarks" layoutX="48.0" layoutY="137.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <TextField fx:id="Form1EndTerm3AverageMarks" layoutX="209.0" layoutY="137.0" prefHeight="27.0" prefWidth="71.0" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </TitledPane>
+                              <TitledPane animated="false" layoutX="24.0" layoutY="285.0" prefHeight="210.0" prefWidth="338.0" text="Form 3" textFill="#d9910d">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="149.0" prefWidth="466.0">
+                                       <children>
+                                          <Label layoutX="11.0" layoutY="6.0" prefHeight="17.0" prefWidth="138.0" text="MidTerm1AverageMarks:" />
+                                          <Label layoutX="184.0" layoutY="6.0" prefHeight="17.0" prefWidth="133.0" text="EndTerm1AverageMarks" />
+                                          <TextField fx:id="Form3MidTerm1AverageMarks" layoutX="36.0" layoutY="23.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <TextField fx:id="Form3EndTerm1AverageMarks" layoutX="205.0" layoutY="23.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <Button layoutX="356.0" layoutY="179.0" mnemonicParsing="false" text="Submit" />
+                                          <Label layoutX="10.0" layoutY="63.0" prefHeight="17.0" prefWidth="136.0" text="MidTerm2AverageMarks:" />
+                                          <Label layoutX="183.0" layoutY="63.0" prefHeight="17.0" prefWidth="131.0" text="EndTerm2AverageMarks" />
+                                          <TextField fx:id="Form3MidTerm2AverageMarks" layoutX="35.0" layoutY="80.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <TextField fx:id="Form3EndTerm2AverageMarks" layoutX="204.0" layoutY="80.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <Label layoutX="11.0" layoutY="117.0" prefHeight="17.0" prefWidth="136.0" text="MidTerm3AverageMarks:" />
+                                          <Label layoutX="184.0" layoutY="117.0" prefHeight="17.0" prefWidth="131.0" text="EndTerm3AverageMarks" />
+                                          <TextField fx:id="Form3MidTerm3AverageMarks" layoutX="36.0" layoutY="134.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <TextField fx:id="Form3EndTerm3AverageMarks" layoutX="205.0" layoutY="134.0" prefHeight="27.0" prefWidth="71.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </TitledPane>
+                              <TitledPane animated="false" layoutX="379.0" layoutY="61.0" prefHeight="210.0" prefWidth="357.0" text="Form 2" textFill="#0d90d9">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="149.0" prefWidth="466.0">
+                                       <children>
+                                          <Label layoutX="16.0" layoutY="16.0" prefHeight="17.0" prefWidth="136.0" text="MidTerm1AverageMarks:" />
+                                          <Label layoutX="195.0" layoutY="16.0" prefHeight="17.0" prefWidth="133.0" text="EndTerm1AverageMarks" />
+                                          <TextField fx:id="Form2MidTerm1AverageMarks" layoutX="42.0" layoutY="33.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <TextField fx:id="Form2EndTerm1AverageMarks" layoutX="216.0" layoutY="33.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <Label layoutX="16.0" layoutY="73.0" prefHeight="17.0" prefWidth="136.0" text="MidTerm2AverageMarks:" />
+                                          <Label layoutX="194.0" layoutY="73.0" prefHeight="17.0" prefWidth="131.0" text="EndTerm2AverageMarks" />
+                                          <TextField fx:id="Form2MidTerm2AverageMarks" layoutX="41.0" layoutY="90.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <TextField fx:id="Form2EndTerm2AverageMarks" layoutX="215.0" layoutY="90.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <Label layoutX="17.0" layoutY="127.0" prefHeight="17.0" prefWidth="136.0" text="MidTerm3AverageMarks:" />
+                                          <Label layoutX="195.0" layoutY="127.0" prefHeight="17.0" prefWidth="131.0" text="EndTerm3AverageMarks" />
+                                          <TextField fx:id="Form2MidTerm3AverageMarks" layoutX="42.0" layoutY="144.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <TextField fx:id="Form2EndTerm3AverageMarks" layoutX="216.0" layoutY="144.0" prefHeight="27.0" prefWidth="71.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </TitledPane>
+                              <TitledPane animated="false" layoutX="380.0" layoutY="286.0" prefHeight="209.0" prefWidth="358.0" text="Form 4" textFill="#d90d0d">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="149.0" prefWidth="466.0">
+                                       <children>
+                                          <Label layoutX="15.0" layoutY="8.0" prefHeight="17.0" prefWidth="138.0" text="MidTerm1AverageMarks:" />
+                                          <Label layoutX="192.0" layoutY="6.0" prefHeight="17.0" prefWidth="133.0" text="EndTerm1AverageMarks" />
+                                          <TextField fx:id="Form4MidTerm1AverageMarks" layoutX="40.0" layoutY="25.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <TextField fx:id="Form4EndTerm1AverageMarks" layoutX="213.0" layoutY="23.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <Button layoutX="356.0" layoutY="179.0" mnemonicParsing="false" text="Submit" />
+                                          <Label layoutX="14.0" layoutY="65.0" prefHeight="17.0" prefWidth="136.0" text="MidTerm2AverageMarks:" />
+                                          <Label layoutX="191.0" layoutY="63.0" prefHeight="17.0" prefWidth="131.0" text="EndTerm2AverageMarks" />
+                                          <TextField fx:id="Form4MidTerm2AverageMarks" layoutX="39.0" layoutY="82.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <TextField fx:id="Form4EndTerm2AverageMarks" layoutX="212.0" layoutY="80.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <Label layoutX="15.0" layoutY="119.0" prefHeight="17.0" prefWidth="136.0" text="MidTerm3AverageMarks:" />
+                                          <Label layoutX="192.0" layoutY="117.0" prefHeight="17.0" prefWidth="131.0" text="EndTerm3AverageMarks" />
+                                          <TextField fx:id="Form4MidTerm3AverageMarks" layoutX="40.0" layoutY="136.0" prefHeight="27.0" prefWidth="71.0" />
+                                          <TextField fx:id="Form4EndTerm3AverageMarks" layoutX="213.0" layoutY="134.0" prefHeight="27.0" prefWidth="71.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </TitledPane>
+                              <TextField fx:id="regnoarea" layoutX="77.0" layoutY="10.0" prefHeight="27.0" prefWidth="126.0" />
+                              <Label layoutX="34.0" layoutY="15.0" prefHeight="17.0" prefWidth="51.0" text="RegNo:" />
+                              <Label layoutX="236.0" layoutY="14.0" prefHeight="17.0" prefWidth="85.0" text="Subject Code:" />
+                              <TextField fx:id="subcode" layoutX="315.0" layoutY="12.0" prefHeight="27.0" prefWidth="101.0" />
+                              <Button layoutX="797.0" layoutY="261.0" mnemonicParsing="false" onAction="#MarksSubmission" prefHeight="50.0" prefWidth="147.0" text="SUBMIT MARKS" textFill="#bc1d1d">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane animated="false" prefHeight="201.0" prefWidth="1032.0" text="Report an Indiscipline Case?">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="192.0" prefWidth="1030.0">
+                           <children>
+                              <Button layoutX="31.0" layoutY="23.0" mnemonicParsing="false" onAction="#disciplinaryBlackBook" prefHeight="80.0" prefWidth="204.0" text="REPORT" textFill="#21a2e8">
+                                 <font>
+                                    <Font name="System Bold" size="29.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane animated="false" text="View Student Progress" textFill="#25bf14">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" prefHeight="19.0" prefWidth="52.0" text="Search:">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="RegNoSearchArea" layoutX="66.0" layoutY="11.0" prefHeight="31.0" prefWidth="194.0" promptText="Student Registration Number" />
+                              <TableView fx:id="StudentProgressTable" layoutX="13.0" layoutY="44.0" prefHeight="128.0" prefWidth="1011.0">
+                                <columns>
+                                  <TableColumn fx:id="SearchReg_No" prefWidth="197.0" text="Reg No" />
+                                  <TableColumn fx:id="SearchFirst_Name" minWidth="0.0" prefWidth="108.0" text="First Name" />
+                                    <TableColumn fx:id="SearchLast_Name" minWidth="0.0" prefWidth="102.0" text="Last Name" />
+                                    <TableColumn fx:id="Form1_Average" prefWidth="150.0" text="Form1 Average" />
+                                    <TableColumn fx:id="Form2_Average" prefWidth="147.0" text="Form2 Average" />
+                                    <TableColumn fx:id="Form3_Average" prefWidth="156.0" text="Form3 Average" />
+                                    <TableColumn fx:id="Form4_Average" prefWidth="148.0" text="Form4 Average" />
+                                </columns>
+                              </TableView>
+                              <Button layoutX="266.0" layoutY="11.0" mnemonicParsing="false" onAction="#searchStudentRecord" text="Search" />
+                              <Button layoutX="337.0" layoutY="11.0" mnemonicParsing="false" onAction="#viewTable" text="View Record" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </TitledPane>
+              </panes>
+            </Accordion>
+            <Button layoutX="1123.0" layoutY="600.0" mnemonicParsing="false" onAction="#backtologinpage" prefWidth="112.0" text="Log Out">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="352.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentprogressmonitor.MainController">
+   <children>
+      <Label layoutX="144.0" layoutY="21.0" prefHeight="36.0" prefWidth="358.0" text="Indiscipline Cases BlackBook" textFill="#c904ff">
+         <font>
+            <Font name="Californian FB" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="83.0" prefHeight="19.0" prefWidth="56.0" text="RegNo:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="124.0" prefHeight="17.0" prefWidth="107.0" text="Case Description:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="203.0" prefHeight="19.0" prefWidth="92.0" text="Action Taken:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="238.0" prefHeight="17.0" prefWidth="107.0" text="Date Of Offence:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="studentregno" layoutX="182.0" layoutY="80.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="actiontaken" layoutX="184.0" layoutY="200.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextArea fx:id="casedescription" layoutX="182.0" layoutY="113.0" prefHeight="61.0" prefWidth="200.0" promptText="Case Description" />
+      <Button layoutX="461.0" layoutY="303.0" mnemonicParsing="false" onAction="#indisciplineReports" prefHeight="25.0" prefWidth="118.0" text="Report Case" textFill="#cd0c0c">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="26.0" layoutY="303.0" mnemonicParsing="false" onAction="#backtodashboard" prefHeight="31.0" prefWidth="167.0" text="Back to Dashboard" textFill="#0c83cc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="DOffence" layoutX="184.0" layoutY="235.0" prefHeight="25.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
